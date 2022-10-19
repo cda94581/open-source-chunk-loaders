@@ -1,0 +1,13 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "cda001:chunk_loader_block",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:map_color": "#00ff00",
+			"minecraft:block_light_emission": 0.75
+		}
+	}
+}

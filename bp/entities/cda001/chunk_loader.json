@@ -1,0 +1,377 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "cda001:chunk_loader",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"cda001:instant_despawn": {
+				"minecraft:skin_id": {
+					"value": 1
+				},
+				"minecraft:instant_despawn": {}
+			},
+			"cda001:radius_2": {
+				"minecraft:skin_id": {
+					"value": 2
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"none_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:radius_3"
+							},
+							"interact_text": "Set Radius to 3 Chunks",
+							"swing": true,
+							"play_sounds": "deny"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:instant_despawn"
+							},
+							"spawn_items": {
+								"table": "loot_tables/entities/cda001/chunk_loader.json"
+							},
+							"interact_text": "Pickup",
+							"swing": true,
+							"play_sounds": "beacon.deactivate"
+						}
+					]
+				},
+				"minecraft:tick_world": {
+					"never_despawn": true,
+					"radius": 2
+				}
+			},
+			"cda001:radius_3": {
+				"minecraft:skin_id": {
+					"value": 3
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"none_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:radius_4"
+							},
+							"interact_text": "Set Radius to 4 Chunks",
+							"swing": true,
+							"play_sounds": "deny"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:instant_despawn"
+							},
+							"spawn_items": {
+								"table": "loot_tables/entities/cda001/chunk_loader.json"
+							},
+							"interact_text": "Pickup",
+							"swing": true,
+							"play_sounds": "beacon.deactivate"
+						}
+					]
+				},
+				"minecraft:tick_world": {
+					"never_despawn": true,
+					"radius": 3
+				}
+			},
+			"cda001:radius_4": {
+				"minecraft:skin_id": {
+					"value": 4
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"none_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:radius_5"
+							},
+							"interact_text": "Set Radius to 5 Chunks",
+							"swing": true,
+							"play_sounds": "deny"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:instant_despawn"
+							},
+							"spawn_items": {
+								"table": "loot_tables/entities/cda001/chunk_loader.json"
+							},
+							"interact_text": "Pickup",
+							"swing": true,
+							"play_sounds": "beacon.deactivate"
+						}
+					]
+				},
+				"minecraft:tick_world": {
+					"never_despawn": true,
+					"radius": 4
+				}
+			},
+			"cda001:radius_5": {
+				"minecraft:skin_id": {
+					"value": 5
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"none_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:radius_6"
+							},
+							"interact_text": "Set Radius to 6 Chunks",
+							"swing": true,
+							"play_sounds": "deny"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:instant_despawn"
+							},
+							"spawn_items": {
+								"table": "loot_tables/entities/cda001/chunk_loader.json"
+							},
+							"interact_text": "Pickup",
+							"swing": true,
+							"play_sounds": "beacon.deactivate"
+						}
+					]
+				},
+				"minecraft:tick_world": {
+					"never_despawn": true,
+					"radius": 5
+				}
+			},
+			"cda001:radius_6": {
+				"minecraft:skin_id": {
+					"value": 6
+				},
+				"minecraft:interact": {
+					"interactions": [
+						{
+							"on_interact": {
+								"filters": {
+									"none_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:radius_2"
+							},
+							"interact_text": "Set Radius to 2 Chunks",
+							"swing": true,
+							"play_sounds": "deny"
+						},
+						{
+							"on_interact": {
+								"filters": {
+									"all_of": {
+										"test": "is_sneaking",
+										"subject": "player"
+									}
+								},
+								"event": "cda001:instant_despawn"
+							},
+							"spawn_items": {
+								"table": "loot_tables/entities/cda001/chunk_loader.json"
+							},
+							"interact_text": "Pickup",
+							"swing": true,
+							"play_sounds": "beacon.deactivate"
+						}
+					]
+				},
+				"minecraft:tick_world": {
+					"never_despawn": true,
+					"radius": 6
+				}
+			}
+		},
+		"components": {
+			"minecraft:skin_id": {
+				"value": 0
+			},
+			"minecraft:health": {
+				"max": 1,
+				"value": 1
+			},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"deals_damage": false
+				}
+			},
+			"minecraft:nameable": {
+				"always_show": true
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"none_of": {
+									"test": "is_sneaking",
+									"subject": "player"
+								}
+							},
+							"event": "cda001:radius_2"
+						},
+						"interact_text": "Set Radius to 2 Chunks",
+						"swing": true,
+						"play_sounds": "beacon.activate"
+					},
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": {
+									"test": "is_sneaking",
+									"subject": "player"
+								}
+							},
+							"event": "cda001:instant_despawn"
+						},
+						"spawn_items": {
+							"table": "loot_tables/entities/cda001/chunk_loader.json"
+						},
+						"interact_text": "Pickup",
+						"swing": true,
+						"play_sounds": "beacon.deactivate"
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"cda001:instant_despawn": {
+				"add": {
+					"component_groups": [
+						"cda001:instant_despawn"
+					]
+				}
+			},
+			"cda001:radius_2": {
+				"add": {
+					"component_groups": [
+						"cda001:radius_2"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cda001:radius_3",
+						"cda001:radius_4",
+						"cda001:radius_5",
+						"cda001:radius_6"
+					]
+				}
+			},
+			"cda001:radius_3": {
+				"add": {
+					"component_groups": [
+						"cda001:radius_3"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cda001:radius_2",
+						"cda001:radius_4",
+						"cda001:radius_5",
+						"cda001:radius_6"
+					]
+				}
+			},
+			"cda001:radius_4": {
+				"add": {
+					"component_groups": [
+						"cda001:radius_4"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cda001:radius_2",
+						"cda001:radius_3",
+						"cda001:radius_5",
+						"cda001:radius_6"
+					]
+				}
+			},
+			"cda001:radius_5": {
+				"add": {
+					"component_groups": [
+						"cda001:radius_5"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cda001:radius_2",
+						"cda001:radius_3",
+						"cda001:radius_4",
+						"cda001:radius_6"
+					]
+				}
+			},
+			"cda001:radius_6": {
+				"add": {
+					"component_groups": [
+						"cda001:radius_6"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"cda001:radius_2",
+						"cda001:radius_3",
+						"cda001:radius_4",
+						"cda001:radius_5"
+					]
+				}
+			}
+		}
+	}
+}

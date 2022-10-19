@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "cda001:chunk_loader",
+			"materials": { "default": "entity_emissive" },
+			"geometry": { "default": "geometry.cda001.chunk_loader" },
+			"textures": {
+				"cda001_0": "textures/cda001/0",
+				"cda001_1": "textures/cda001/1",
+				"cda001_2": "textures/cda001/2",
+				"cda001_3": "textures/cda001/3",
+				"cda001_4": "textures/cda001/4",
+				"cda001_5": "textures/cda001/5",
+				"cda001_6": "textures/cda001/6"
+			},
+			"render_controllers": [ "controller.render.cda001.chunk_loader" ]
+		}
+	}
+}

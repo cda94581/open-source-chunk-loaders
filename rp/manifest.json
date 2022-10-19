@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "Chunk Loaders keep things loaded around them, even when no one is around. This add-on supports a 2 chunk radius, 3 chunk radius, 4 chunk radius, 5 chunk radius, and 6 chunk radius. Keep in mind, lag is possible.\nChunk Loaders are actually quite simple, so this add-on is open source, free for anyone to use to their pleasure!",
+		"name": "Open Source Chunk Loaders v1.0.0 [RP]",
+		"uuid": "4a231a32-de97-4e8a-af73-c2a73f2d8f4f",
+		"version": [ 1, 0, 0 ],
+		"min_engine_version": [ 1, 16, 0 ]
+	},
+	"modules": [
+		{
+			"uuid": "ca5d2582-9fe8-423d-9005-fccd9b040db3",
+			"type": "resources",
+			"version": [ 1, 0, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "1ce480fb-2732-4110-82c3-8fae7e6ba377",
+			"version": [ 1, 0, 0 ]
+		}
+	]
+}

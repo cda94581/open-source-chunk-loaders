@@ -1,0 +1,6 @@
+{
+	"cda001:chunk_loader_block": {
+		"textures": "cda001_chunk_loader_block",
+		"sound": "stone"
+	}
+}

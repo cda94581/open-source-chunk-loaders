@@ -1,0 +1,12 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:recipe_shapeless": {
+		"description": { "identifier": "cda001:chunk_loader" },
+		"tags": [ "crafting_table" ],
+		"ingredients": [
+			{ "item": "minecraft:nether_star" },
+			{ "item": "minecraft:lodestone" }
+		],
+		"result": { "item": "cda001:chunk_loader_block" }
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "cda001:chunk_loader_block",
+					"weight": 1
+				}
+			]
+		}
+	]
+}

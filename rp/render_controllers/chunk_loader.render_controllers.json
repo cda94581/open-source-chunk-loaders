@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.cda001.chunk_loader": {
+			"arrays": {
+				"textures": {
+					"Array.textures": [
+						"Texture.cda001_0",
+						"Texture.cda001_1",
+						"Texture.cda001_2",
+						"Texture.cda001_3",
+						"Texture.cda001_4",
+						"Texture.cda001_5",
+						"Texture.cda001_6"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [{ "*": "Material.default" }],
+			"textures": [ "Array.textures[query.skin_id]" ]
+		}
+	}
+}

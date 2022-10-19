@@ -1,0 +1,8 @@
+[
+	{
+		"flipbook_texture": "textures/cda001/block",
+		"atlas_tile": "cda001_chunk_loader_block",
+		"ticks_per_frame": 20,
+		"blend_frames": true
+	}
+]
